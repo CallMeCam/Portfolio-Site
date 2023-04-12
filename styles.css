@@ -86,6 +86,10 @@ p {
     font-size: 1.5em;
 }
 
+.body-justified {
+    text-align: justify;
+}
+
 /*
 * Home page work grid
 */
@@ -122,6 +126,11 @@ p {
     height: 100%;
     max-height: 400px;
     max-width: 600px;
+    border-radius: 5px;
+}
+
+.img-zoom img {
+    border-radius: 5px;
 }
 
 .content-card:hover .underline-animation::after{
@@ -196,8 +205,8 @@ p {
 
 .case-content {
     text-align: justify;
-    padding-bottom: 40px;
-    padding-top: 40px;
+    padding-bottom: 60px;
+    padding-top: 60px;
     max-width: 850px;
     margin: 0 auto;
 }
@@ -227,6 +236,30 @@ p {
 
 .case-study-header-image img {
     float: none;
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; 
+}
+
+.text-box {
+    padding: 2em 2.5em;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 /*
