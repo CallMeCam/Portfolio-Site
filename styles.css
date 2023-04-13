@@ -90,6 +90,16 @@ p {
     text-align: justify;
 }
 
+small {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+small a {
+    text-decoration: underline;
+}
+
 /*
 * Home page work grid
 */
@@ -140,8 +150,8 @@ p {
 
 .content-card:hover .img-zoom {
     transform: scale(1.02);
-    box-shadow: 3px 3px 10px #d4d4d4,
-                -3px -3px 10px #cbcbcb;
+    box-shadow:  15px 15px 27px #e0e0e0,
+             -15px -15px 27px #ffffff;
 }
 
 .underline-animation {
@@ -259,7 +269,8 @@ p {
     padding: 2em 2.5em;
     border: 0;
     border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow:  15px 15px 37px #e0e0e0,
+             -15px -15px 37px #ffffff;
 }
 
 /*
@@ -386,3 +397,66 @@ li {
     color: #333;
     border: 1px solid #333;
 }
+
+/*
+* Alert Message
+*/
+
+ /* The alert message box */
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+    z-index: 99;
+    display: block;
+}
+
+.alert small {
+    color: white;
+}
+
+.alert small a {
+    color: white;
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+} 
+
+/*
+* Sroll to top button
+*/
+
+#scroll-to-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 30px;
+    display: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 0;
+    box-shadow:  7px 7px 29px #dedede,
+                -7px -7px 29px #ffffff;
+}
+
+#scroll-to-top-btn.show {
+    display: block;
+}
+
+  
