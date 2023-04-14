@@ -74,6 +74,15 @@ h2 {
     font-size: 1.6em;  
 }
 
+.tag {
+    display: inline;
+    padding: 0.3em 0.6em;
+    border: solid;
+    border-width: 1.5px;
+    border-radius: 50px;
+    border-color: rgba(0, 0, 255, 1);
+}
+
 h3 {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 400;
@@ -262,7 +271,9 @@ small a {
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding-top: 56.25%; 
+    margin-top: 60px;
+    padding-top: 56.25%;
+    margin-bottom:120px; 
 }
 
 .text-box {
