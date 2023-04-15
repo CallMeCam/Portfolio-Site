@@ -12,6 +12,8 @@ body {
     margin-top: 100px;
 }
 
+
+
 /*
 * Links
 */
@@ -45,6 +47,7 @@ p a {
 
 .intro-body {
     display: flex;
+    flex-direction: row;
     margin-bottom: 40px;
 }
 
@@ -75,7 +78,7 @@ h2 {
 }
 
 .tag {
-    display: inline;
+    display: inline-block;
     padding: 0.3em 0.6em;
     border: solid;
     border-width: 1.5px;
@@ -282,6 +285,7 @@ small a {
     border-radius: 10px;
     box-shadow:  15px 15px 37px #e0e0e0,
              -15px -15px 37px #ffffff;
+    margin: 20px;
 }
 
 /*
@@ -306,22 +310,6 @@ small a {
     vertical-align: middle;
     width: 100%; 
 }
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-    .case-image-grid-column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .case-image-grid-column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
 
 /*
 * Scroll Bar
@@ -470,4 +458,29 @@ li {
     display: block;
 }
 
+ /*
+ * Media Queries
+ */ 
+
+@media screen and (max-width: 800px) {
+    .case-image-grid-column {
+        flex: 50%;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    .text-box {
+        margin: 10px;
+    }
+}
   
+@media screen and (max-width: 600px) {
+    .case-image-grid-column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .intro-body {
+        flex-direction: column;
+    }
+}
