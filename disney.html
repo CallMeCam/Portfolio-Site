@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Plus+Jakarta+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <title>Cameron McCormick</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header Content -->
+        <div class="row">
+            <div class="one-half column">
+                <h2>
+                    <a href="./index.html">Cameron McCormick</a>
+                    <br>©2023 Cameron McCormick
+                </h2>
+            </div>
+            <div class="one-half column">
+                <h2 style="text-align: right;"><a href="./about.html">About</a> <a href="./contact.html">Contact</a>
+                </h2>
+            </div>
+        </div>
+        <!-- Page Content -->
+        <div class="row">
+            <div class="one-half column">
+                <h2><b>Rammed Earth House</b><br>A.C.P. (2020)</h2>
+                <h6 class="tag">Architecture</h6>
+                <h6 class="tag">Rhino</h6>
+                <h6 class="tag">Cinema4D</h6>
+            </div>
+            <div class="one-half column">
+                <div class="text-box">
+                    <p class="body-justified">
+                        Media and content are arguably the most abundant product of our time. The Disney Animation Center – designed for one of the most recognizable media corporations of the 20th and 21st century - acknowledges our desire for the consumption of media. The animation center offers creative office and exhibition space for the production of content, while simultaneously providing the canvas for which the media is displayed upon and made consumable to the public.
+                    </p>
+                    <p>
+                        This project was completed in collaboration with Fateme Jalali.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="case-media">
+                <img src="images\disney\disney_header.jpg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="one-half column">
+                <div class="case-media">
+                    <img src="images\disney\model_1.jpg">
+                </div>
+            </div>
+            <div class="one-half column">
+                <div class="case-media">
+                    <model-viewer src="3d_models\disney.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" loading="eager" reveal="auto" wdith="100%" auto-rotate>
+                        <div class="progress-bar hide" slot="progress-bar">
+                            <div class="update-bar"></div>
+                        </div>
+                    </model-viewer>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="case-media">
+                <img src="images\disney\plan_1.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="case-media">
+                <img src="images\disney\plan_2.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="case-media">
+                <img src="images\disney\plan_3.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="case-media">
+                <img src="images\disney\model_2.jpg">
+            </div>
+        </div>
+    </div>
+     <!-- Scroll to top button -->
+     <button id="scroll-to-top-btn" style="font-size: 1.2em; color: #454545;"><i class="fas fa-arrow-up"></i></button>
+     <script src="scripts.js"></script>
+    <!-- Model Viewer -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+</body>
+</html>
