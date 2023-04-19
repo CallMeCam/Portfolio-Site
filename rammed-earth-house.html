@@ -73,7 +73,21 @@
         </div>
         <div class="row">
             <div class="case-media">
-                <model-viewer src="3d_models\rammed_earth_house.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" loading="eager" reveal="auto" wdith="100%" auto-rotate>
+                <model-viewer 
+                    src="3d_models\rammed_earth_house.gltf" 
+                    ar ar-modes="webxr scene-viewer quick-look" 
+                    camera-controls poster="poster.webp" 
+                    shadow-intensity="1" 
+                    loading="eager" 
+                    reveal="auto" 
+                    wdith="100%" 
+                    auto-rotate
+                    skybox-image="3d_models\model_viewer_scene.jpg"
+                    environment-image="3d_models\studio_small_08_1k.hdr"
+                    exposure="0.5"
+                    shadow-intensity="1" 
+                    shadow-softness="0"
+                    >
                     <div class="progress-bar hide" slot="progress-bar">
                         <div class="update-bar"></div>
                     </div>
